@@ -5,3 +5,8 @@ ul{
 ul li a{
     text-decoration: none;
 }
+
+header{
+    margin:auto;
+    max-width: 1200px;
+}
