@@ -129,6 +129,10 @@ main section {
     margin: 0 10px;
 }
 
+main li{
+    line-height: 2;
+}
+
 main section h2{
     color:#A387B2;
     text-align: center;
