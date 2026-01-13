@@ -130,7 +130,7 @@ main section {
 }
 
 main li{
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 main section h2{
@@ -146,8 +146,8 @@ main section:hover{
 
 footer{
     text-align: center;
-    padding-top: 1%;
     width: 100%;
+    padding-top: 25px;
 }
 
 footer a{
