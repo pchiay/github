@@ -138,11 +138,11 @@ main section h2{
     text-align: center;
 }
 
+
 main section:hover{
     border-color: #A387B2;
     border-style: dashed;
 }
-
 
 footer{
     text-align: center;
