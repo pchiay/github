@@ -63,7 +63,7 @@ p{
 
 
 h2{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lexand Exa', sans-serif;
 }
 
 .title{
@@ -136,6 +136,11 @@ main li{
 main section h2{
     color:#A387B2;
     text-align: center;
+}
+
+main section:hover{
+    border-color: #A387B2;
+    border-style: dashed;
 }
 
 
