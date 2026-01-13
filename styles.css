@@ -136,13 +136,16 @@ main section h2{
 
 
 footer{
-    margin-top: 4em;
     text-align: center;
+    padding-top: 5%;
     width: 100%;
-    height: 100px;
 }
 
 footer a{
+    color: #A387B2;
+}
+
+footer p{
     color: #574242;
 }
 
