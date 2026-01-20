@@ -23,6 +23,7 @@ p{
 h2{
     font-family: 'Lexand Exa', sans-serif;
     color: #A387B2;
+    font-size: 2rem;
 }
 
 main {
@@ -46,4 +47,27 @@ article{
     gap: 20px;
 }
 
+time{
+    font-family: 'Lexand Exa', sans-serif;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 2.5;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    padding-top: 2px;
+}
+
+footer a{
+    color: #A387B2;
+}
+
+footer p{
+    color: #574242;
+}
 
