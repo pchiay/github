@@ -127,6 +127,7 @@ main section {
     box-sizing: border-box;
     flex: 1;
     margin: 0 10px;
+    border: 1px dashed transparent;
 }
 
 main li{
@@ -141,7 +142,6 @@ main section h2{
 
 main section:hover{
     border-color: #A387B2;
-    border-style: dashed;
 }
 
 footer{
