@@ -1,6 +1,7 @@
 #banner{
     height: 250px;
-    background-color: #CDDE9E;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +12,10 @@
 #banner h1{
     color: #574242;
     z-index: 1;
+}
+
+header{
+      background-color: #CDDE9E;
 }
 
 .Stars{
