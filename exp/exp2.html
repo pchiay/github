@@ -16,16 +16,25 @@
         var yourColor = prompt('Guess the color on my mind. Choose one (red, yellow, green, or blue)', '');
         var colorArray = ['red', 'yellow', 'green', 'blue'];
 
-        var randomPick = Math.floor(Math.random() * colorArray.length);
+        function pickAColor(color){
+            var randomPick = Math.floor(Math.random() * color.length);
+            var chosenColor = color[randomPick];
 
-        var chosenColor = colorArray[randomPick];
-
-        if(yourColor === chosenColor){
-            alert(`You are right!`);
-            document.querySelector('body').style.backgroundColor = yourColor;
-        } else{
-            alert(`Try again! I was thinking of ${chosenColor}`);
+            return chosenColor;
         }
+
+        function verifyResult(userInput, generatedColor){
+            if(userInput === generatedColor){
+            alert(`You are right!`);
+            document.querySelector('body').style.backgroundColor = userInput;
+            } else{
+                alert(`Try again! I was thinking of ${generatedColor}`);
+            }
+        }
+
+        var chosenColor = pickAColor(colorArray);
+        verifyResult(yourColor, chosenColor);
+
     </script>
 </body>
 </html>
