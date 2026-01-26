@@ -11,11 +11,11 @@
 
     <script>
         var yourColor = prompt('Guess the color on my mind. Choose one (red, yellow, green, or blue)', '');
-        var colors = ['red', 'yellow', 'green', 'blue'];
+        var colorArray = ['red', 'yellow', 'green', 'blue'];
 
-        var randomPick = Math.floor(Math.random() * colors.length);
+        var randomPick = Math.floor(Math.random() * colorArray.length);
 
-        var chosenColor = colors[randomPick];
+        var chosenColor = colorArray[randomPick];
 
         if(yourColor === chosenColor){
             alert(`You are right!`);
@@ -23,6 +23,9 @@
         } else{
             alert(`Try again! I was thinking of ${chosenColor}`);
         }
+
+        /* Asks user to guess the color I'm thinking of and displays if they got it right or wrong.*/
+        /* It will change the background of the body to that color if it was right! */
 
     </script>
 </body>
