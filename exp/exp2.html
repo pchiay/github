@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+
+    <h1>Experiment 2</h1>
+
+    <script>
+        var yourColor = prompt('Guess the color on my mind. Choose one (red, yellow, green, or blue)', '');
+        var colors = ['red', 'yellow', 'green', 'blue'];
+
+        var randomPick = Math.floor(Math.random() * colors.length);
+
+        var chosenColor = colors[randomPick];
+
+        if(yourColor === chosenColor){
+            alert(`You are right!`);
+            document.querySelector('body').style.backgroundColor = yourColor;
+        } else{
+            alert(`Try again! I was thinking of ${chosenColor}`);
+        }
+
+    </script>
+</body>
+</html>
