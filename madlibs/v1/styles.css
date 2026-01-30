@@ -1,0 +1,20 @@
+/* section {
+    flex: 1;
+    padding: 40px;
+}
+
+main {
+    display: flex;
+    width: 900px;
+    margin: auto;
+   
+    box-sizing: border-box;
+}
+/* 
+form{
+    display: flex;
+} */ 
+
+section form{
+    display: flex;
+}
