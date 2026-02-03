@@ -57,11 +57,12 @@ p{
     color: #76563F;
     background-color: #DDD6BE;
     border-radius: 10px;
-    width: 700px;
-    padding: 50px;
+    width: 900px;
+    height: 400px;
+    padding: 60px;
     line-height: 3em;
     margin: 200px auto 0 auto;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 button{
