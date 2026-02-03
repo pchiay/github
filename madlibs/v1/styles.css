@@ -1,20 +1,62 @@
-/* section {
-    flex: 1;
-    padding: 40px;
+#grid{
+    background-color: aliceblue;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 15px 30px;
+    max-width: 700px;
+    flex-direction: column;
 }
 
-main {
+body{
+    background-image: url(images/backnew.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header{
+    font-family: 'Poppins', sans-serif;
+}
+
+#madlib-questions {
+    display: block;
+}
+
+#top{
     display: flex;
     width: 900px;
-    margin: auto;
-   
-    box-sizing: border-box;
-}
-/* 
-form{
+    margin: 0 auto 800px auto;
     display: flex;
-} */ 
+    justify-content: flex-end;
 
-section form{
-    display: flex;
+}
+
+#bottom{
+    background-image: url(images/result.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #76563F;
+    background-color: #DDD6BE;
+    border-radius: 10px;
+    width: 700px;
+    padding: 20px;
+    line-height: 2rem;
+    position: absolute;
+}
+
+
+form{
+    font-family: 'Poppins', sans-serif;
 }
