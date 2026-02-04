@@ -64,7 +64,7 @@ header h1{
 #top{
     display: flex;
     width: 900px;
-    margin: 0 auto 800px 800px;
+    margin: 0 auto 800px 500px;
     display: flex;
     justify-content: flex-end;
 
