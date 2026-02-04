@@ -107,3 +107,11 @@ input{
     width: 150px;
     height: 35px;
 }
+
+main section{
+    transition: all .5s ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
