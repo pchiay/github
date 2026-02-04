@@ -1,12 +1,28 @@
-#grid{
+#grid {
     background-color: #AB9B90;
-    /* display: flex; */
-    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) minmax(220px, 1fr);
+    gap: 24px 40px;
+    padding: 50px;
     border-radius: 10px;
-    gap: 15px 30px;
-    width: 380px;
-    height: 400px;
+    max-width: 600px; 
 }
+
+.col1 input,
+.col2 input {
+    width: 100%;
+}
+
+
+
+.submit-btn {
+    grid-column: 1 / -1;
+    margin-top: 10px;   
+}
+
+
+
+
 .container{
     display: flex;
     gap: 100px;
@@ -14,13 +30,13 @@
 }
 
 .col1{
-    width: 100px;
+    width: 200px;
     display: flex;
     flex-direction: column;
 }
 
 .col2{
-    width: 100px;
+    width: 200px;
     display: flex;
     flex-direction: column;       
 }
@@ -48,9 +64,10 @@ header h1{
 #top{
     display: flex;
     width: 900px;
-    margin: 0 auto 800px auto;
+    margin: 0 auto 800px 800px;
     display: flex;
     justify-content: flex-end;
+
 
 }
 
@@ -103,7 +120,15 @@ form{
     line-height: 3rem;
 }
 
-input{
+/* input{
     width: 150px;
     height: 35px;
+} */
+
+main section{
+    transition: all .5s ease;
+}
+
+html{
+    scroll-behavior: smooth;
 }
