@@ -2,27 +2,29 @@
     background-color: #AB9B90;
     /* display: flex; */
 
-    padding: 30px;
+    padding: 50px;
     border-radius: 10px;
     gap: 15px 30px;
-    max-width: 500px;
+    width: 300px;
+    height: 200px;
 
 }
 .container{
     display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
 }
 
 .col1{
     width: 100px;
     display: flex;
-       flex-direction: column;
+    flex-direction: column;
 }
 
 .col2{
     width: 100px;
     display: flex;
-       flex-direction: column;
-       
+    flex-direction: column;       
 }
 
 body{
@@ -65,22 +67,26 @@ header h1{
 h1{
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-size: 3em;
+    font-size: 4em;
     text-align: right;
     padding-right: 200px;
+    padding-top: 200px;
 }
 
 p{
     font-family: 'Poppins', sans-serif;
     color: #76563F;
-    background-color: #DDD6BE;
-    border-radius: 10px;
+    line-height: 3em;
+    font-size: 1.25em;
+}
+
+.results{
     width: 900px;
     height: 400px;
     padding: 60px;
-    line-height: 3em;
-    margin: 200px auto 0 auto;
-    font-size: 1.25em;
+    background-color: #DDD6BE;
+    border-radius: 10px;
+    margin: 0 auto;
 }
 
 button{
