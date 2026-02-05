@@ -43,14 +43,6 @@ header {
     text-align: center;
 }
 
-header h1{
-    /* font-family: 'Poppins', sans-serif; */
-    
-    /* font-size: 4em; */
-    /* text-align: right; */
-    /* padding-right: 200px; */
-    /* padding-top: 200px; */
-}
 
 h1 {
     font-family: 'Poppins', sans-serif;
@@ -151,11 +143,3 @@ form{
     height: 428px;
     /* margin-top: 100px; */
 }
-
-/* main section{
-    transition: all .5s ease;
-}
-
-html{
-    scroll-behavior: smooth;
-} */
