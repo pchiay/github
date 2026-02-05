@@ -91,11 +91,6 @@ h1 {
     text-align:center
 }
 
-
-#madlib-questions .col1, #madlib-questions .col2 {
-    /* width: 50% */
-}
-
 #top{
     display: flex;
     width: 900px;
@@ -109,8 +104,6 @@ h1 {
     background-repeat: no-repeat;
     height: 100vh;
 }
-
-
 
 
 p{
@@ -159,10 +152,10 @@ form{
     /* margin-top: 100px; */
 }
 
-main section{
+/* main section{
     transition: all .5s ease;
 }
 
 html{
     scroll-behavior: smooth;
-}
+} */
