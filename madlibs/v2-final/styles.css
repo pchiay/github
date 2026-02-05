@@ -58,24 +58,16 @@ h1 {
 }
 
 #madlib-output h1{
-    /* font-family: 'Poppins', sans-serif; */
     color: white;
-    /* font-size: 4em; */
-    /* text-align: center; */
-    /* text-align: right; */
-    /* padding-right: 200px; */
     padding: 50px;
-    /* filter: drop-shadow(5px 5px 10px #3e2157); */
 }
 
 #madlib-questions {
-   /* display: block; */
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
     padding-right: 50px;
-    /* background-color: aquamarine; */
     height: 100vh
 }
 
@@ -86,7 +78,6 @@ h1 {
 #top{
     display: flex;
     width: 900px;
-    /* margin: 0 auto 800px 400px; */
     justify-content: flex-end;
 }
 
@@ -112,7 +103,6 @@ p{
     background-color: #DDD6BE;
     border-radius: 10px;
     margin: 0 auto;
-    /* margin-top: 100px; */
 }
 
 .results p{
@@ -141,5 +131,4 @@ form{
     border-radius: 10px;
     max-width: 584px; 
     height: 428px;
-    /* margin-top: 100px; */
 }
