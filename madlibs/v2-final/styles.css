@@ -27,7 +27,7 @@
 }
 
 body{
-    background-image: url(images/backnew.png);
+    background-image: url(images/newplanet.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -65,7 +65,7 @@ h1 {
     /* text-align: right; */
     /* padding-right: 200px; */
     padding: 50px;
-    filter: drop-shadow(5px 5px 10px #888888);
+    /* filter: drop-shadow(5px 5px 10px #3e2157); */
 }
 
 #madlib-questions {
@@ -91,7 +91,7 @@ h1 {
 }
 
 #bottom{
-    background-image: url(images/newres.png);
+    background-image: url(images/newcrown.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
