@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>MadLibs</title>
+
+    <!--Normalize-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Styles-->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <div class="container">
+                <section id="madlib-questions">
+                     <h1>The Little Prince</h1>
+                    <form>
+                       
+                        <div class="col1">
+                            <label for="noun1">Noun:</label>
+                            <input type="text" name="noun" id="noun1" required>
+
+                            <label for="adjective1">Adjective:</label>
+                            <input type="text" name="adjective" id="adjective1" required>
+
+                            <label for="adjective2">Adjective:</label>
+                            <input type="text" name="adjective" id="adjective2" required>
+
+                            <label for="verb1">Verb:</label>
+                            <input type="text" name="verb" id="verb1" required>
+                        </div>
+
+                        <div class="col2">
+                            <label for="verb2">Verb:</label>
+                            <input type="text" name="verb" id="verb2" required>
+
+                            <label for="verb3">Verb:</label>
+                            <input type="text" name="verb" id="verb3" required>
+
+                            <label for="noun2">Noun:</label>
+                            <input type="text" name="noun" id="noun2" required>
+
+                            <label for="noun3">Noun:</label>
+                            <input type="text" name="noun" id="noun3" required>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </section>
+        </div>
+
+        <section id="madlib-output">
+            <div id = "bottom">
+                <h1>The Little Prince</h1>
+                <article>
+                    <div class="results">
+                        <p id="story">You’re always a <strong>(prince).</strong><br> Living in your own <strong>(little)</strong> world. Do you wonder what the <strong>(outside)</strong> world is like? <br> If you <strong>(reach)</strong> out what will it be like? Will they <strong>(accept)</strong> or <strong>(dislike)</strong> me? <br> No use being in my own mind. Curiosity peaks his delight. <br> So did he know we reached out for a <strong>(sight)</strong>. <br> And so he left for all he knows on his own <strong>(journey)</strong>.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
