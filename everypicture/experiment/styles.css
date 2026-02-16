@@ -1,0 +1,17 @@
+
+.grow img {
+	max-width: 100%;
+	transition: all 1s ease;
+}
+
+.grow img:hover {
+	transform: scale(1.5);
+}
+
+#grayscale{
+    filter: grayscale(100%);
+}
+#grayscale:hover{
+    filter:grayscale(0%)
+}
+
