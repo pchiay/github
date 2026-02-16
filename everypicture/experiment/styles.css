@@ -1,7 +1,10 @@
-
+.grow{
+    background-color: rgb(125, 105, 105);
+}
 .grow img {
 	max-width: 100%;
 	transition: all 1s ease;
+    padding: 40px;
 }
 
 .grow img:hover {
@@ -13,5 +16,12 @@
 }
 #grayscale:hover{
     filter:grayscale(0%)
+}
+
+#blur {
+    filter: blur(5px);
+}
+#blur:hover{
+    filter: blur(0px);
 }
 
