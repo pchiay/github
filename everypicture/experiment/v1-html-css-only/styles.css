@@ -1,8 +1,36 @@
 body{
     background-color:bisque;
+    height: 750px;
+    background-image: url(images/wallshape.png);
 }
 
-h1{
+.header{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+h1, h2, h3, p{
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
+
+.images{
+   display: flex;
+   justify-content: center;
+}
+
+.images img {
+	max-width: 100%;
+	transition: all 1s ease;
+    padding: 40px;
+}
+.images img:hover{
+	transform: scale(1.5);
+    filter: grayscale(100%);
+}
+
+
+
+
+
