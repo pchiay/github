@@ -24,12 +24,25 @@ h1, h2, h3, p{
 	max-width: 100%;
 	transition: all 1s ease;
     padding: 40px;
+    animation: movement 5.5s, ease-in-out infinite;
+}
+
+@keyframes movement {
+    0% {
+        transform: translate(0, 0px)
+    }
+    50% {
+        transform:translate(0, 5px)
+    }
+    100% {
+        transform: translate(0, 0px)
+    }
+
 }
 .images img:hover{
 	transform: scale(1.5);
     filter: grayscale(100%);
 }
-
 
 
 
