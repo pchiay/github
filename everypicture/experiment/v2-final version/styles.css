@@ -4,9 +4,8 @@ body{
     background-image: url(images/wallshape.png);
 }
 
-.header{
+header{
     background-color: aliceblue;
-    border-radius: 20px;
     padding: 5px;
 }
 
@@ -23,7 +22,7 @@ h1, h2, h3, p{
 .images img {
 	max-width: 100%;
 	transition: all 1s ease;
-    animation: movement 2s ease-in-out infinite;
+    animation: movement 2.7s ease-in-out infinite;
 }
 
 @keyframes movement {
@@ -51,18 +50,42 @@ display: none;
 } */
 
 .styled{
-    background-color: brown;
+    background-color: rgb(209, 143, 143);
     position: absolute;
     top: 0;
     right: 0;
     /* width:100vw;
     height: 100vh; */
-    width: 50vw;
+    width: 70vw;
     height: 80vh;
     top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
+.styled img {
+    display: block;
+    margin: 0 auto;
+}
+
+.styled p{
+    line-height: 1.2em;
+}
+
+.close{
+    background-color: bisque;
+    color:blueviolet;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+
+}
+
+.close:hover{
+    background-color: skyblue;
+    color:white;
+}
 
 

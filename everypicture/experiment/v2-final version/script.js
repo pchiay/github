@@ -40,4 +40,10 @@
         console.log('mouse is over area 4');
         redcups.style.display = 'block';
     });
+
+     document.querySelector('.close').addEventListener('click', function (event) {
+        event.preventDefault();
+        document.querySelector('.styled').className = 'hidden';
+    });
+
 })();
