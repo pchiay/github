@@ -104,6 +104,9 @@ display: none;
     width: 100vw;
     height: 100vh;
     background-color: rgba(3, 0, 0, 0.5);
+    transition-property: visibility, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 /* #overlay article{
