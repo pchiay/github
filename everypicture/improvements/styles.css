@@ -42,7 +42,7 @@ h1, h2, h3, p{
     filter: grayscale(100%);
 }
 
-.close1, .close2, .close3, .close4{
+.close1, .close2, .close3, .close4, .close5{
     background-color: bisque;
     color:blueviolet;
     font-family: 'Poppins', sans-serif;
@@ -51,12 +51,12 @@ h1, h2, h3, p{
     border: none;
 }
 
-.close1:hover, .close2:hover, .close3:hover, .close4:hover{
+.close1:hover, .close2:hover, .close3:hover, .close4:hover, .close5:hover{
     background-color: skyblue;
     color:white;
 }
 
-#overlay1, #overlay2,  #overlay3, #overlay4{
+#overlay1, #overlay2,  #overlay3, #overlay4, #overlay5{
     position: absolute;
     top: 0;
     left: 0;
@@ -68,7 +68,7 @@ h1, h2, h3, p{
     transition-timing-function: ease;
 }
 
-#overlay1 article, #overlay2 article, #overlay3 article, #overlay4 article{
+#overlay1 article, #overlay2 article, #overlay3 article, #overlay4 article, #overlay5 article{
     box-sizing: border-box;
     background-color: white;
     width: 50vw;
