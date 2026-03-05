@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Version</title>
+    <script src="script.js" defer></script> 
+
+    <!--Normalize-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Styles-->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>To My Beloved Coworkers</h1>
+        <p>Everytime I walk to the Davis Language Center, I am reminded of all the kind souls I've met!</p>
+        <h2>Click images to learn more!</h2>
+    </header>
+
+    <main>
+        <div class = 'images'>
+            <img src="images/chain.png" alt="keychain" width="280" height="390" id="chain" class="open1">
+            <img src="images/sign.png" alt="sign" width="280" height="390" id="sign" class="open2">
+            <img src="images/catscute.png" alt="cats" width="280" height="390" id="cats" class="open3">
+            <img src="images/cupsred.png" alt="cups" width="280" height="390" id="cups" class="open4">
+        </div>
+
+        <section id="overlay1" class="hidden">
+            <article>
+            <!-- <div id="keychain" class="styled"> -->
+                <h2>Keychain</h2>
+                <p>This keychain was a gift from my coworker Tiffany. It's a small gift she shared with us as a token of appreciation and farewell gift before graduation. Tiffany loves UI/UX Design and has been an inspiration in helping me learn more about designs! </p>
+                <img src="images/chain.png" alt="keychain" width="300" height="400" id="chainoverlay">
+                <button class="close1">Close</button>
+            <!-- </div> -->
+            </article>
+        </section>
+
+        <section id="overlay2" class="hidden">
+            <article>
+        <!-- <div id="signs" class="styled"> -->
+                <h2>Welcome Sign</h2>
+                <p>This sign was customized and altered by my coworker Tiffany. She would make the drawings and print them out and adjust the signage every new holiday! It brings me a lot of joy to see the new messages that are displayed everytime I walk back into the office. She customized all the cutout drawings and I always found them to be super adorable and welcoming to the space!</p>
+                <img src="images/sign.png" alt="sign" width="300" height="400" id="signoverlay">
+                <button class="close2">Close</button>
+        <!-- </div> -->
+            </article>
+        </section>
+        
+         <section id="overlay3" class="hidden">
+                <article>
+            <!-- <div id ="cards" class="styled"> -->
+                    <h2>Birthday Card</h2>
+                    <p>This card was made by my coworker Emma. She made this for her mom's birthday but accidentally printed out two copies, this version here is now displaeyd at our office wall. Emma and I have been working together since the beginning of the first hire cycle. We had many shifts together and I've enjoyed getting to know Emma more ovr the years, I miss our conversations!</p>
+                    <img src="images/catscute.png" alt="cats" width="300" height="400" id="catsoverlay">
+                    <button class="close3">Close</button>
+            <!-- </div> -->
+                </article>
+        </section>
+
+        <section id="overlay4" class="hidden">
+            <article>
+                <!-- <div id ="redcups" class="styled"> -->
+                    <h2>Cups</h2>
+                    <p>Red cups that we used to drink with Arizona from potlucks! All your cups are still here! We started a tradition where we used red cups to pour our small drinks while sharing stories with each other.</p>
+                    <img src="images/cupsred.png" alt="cups" width="300" height="400" id="cupsoverlay">
+                    <button class="close4">Close</button>
+                <!-- </div> -->
+            </article>
+        </section>
+    </main>
+</body>
+</html>
