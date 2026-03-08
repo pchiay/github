@@ -1,0 +1,49 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #A0CDF0;
+    background-image: url(images/rainbowback.png);
+    background-size: cover;
+}
+
+.loading-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gamename{
+    margin-top: 230px;
+}
+
+.first-heading{
+    font-size: 4em;
+    font-family: "Mochiy Pop One", sans-serif;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.second-heading{
+    font-size: 4em;
+    font-family: "McLaren", sans-serif;
+    font-weight: lighter;
+    margin: 0 0 0 100px;
+    margin-bottom: 30px;
+}
+
+.rules {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.play-btn {
+    padding: 18px 30px;
+    font-size: 28px;
+    background-color: #9C66D2;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
