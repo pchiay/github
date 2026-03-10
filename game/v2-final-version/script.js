@@ -4,20 +4,34 @@
 
     var loadingPage = document.querySelector(".loading-screen");
     var characterSelect = document.querySelector(".select-character");
+    var gameScreen = document.querySelector(".game-screen");
 
-    var playButton = document.querySelector(".play-button");
+    var p1Char = document.querySelector(".player1-char");
+    var p2Char = document.querySelector(".player2-char");
+
+    var playButton = document.querySelector(".play-btn");
+    var startButton = document.querySelector(".start-game");
 
     loadingPage.classList.remove("hidden");
     characterSelect.classList.add("hidden");
+    gameScreen.classList.add("hidden");
 
     function showLoadingPage(){
         loadingPage.classList.remove("hidden");
         characterSelect.classList.add("hidden");
+        gameScreen.classList.add("hidden");
     }
 
     function showCharacterSelect(){
         loadingPage.classList.add("hidden");
         characterSelect.classList.remove("hidden");
+        gameScreen.classList.add("hidden");
+    }
+
+    function showGameScreen(){
+        loadingPage.classList.add("hidden");
+        characterSelect.classList.add("hidden");
+        gameScreen.classList.remove("hidden");
     }
 
     playButton.addEventListener("click", function(){
@@ -93,6 +107,13 @@
     changeP1Pic();
     changeP2Pic();
 
+
+    startButton.addEventListener("click", function(){
+        p1Char.src = player1img[player1Idx];
+        p2Char.src = player2img[player2Idx];
+
+        showGameScreen();
+    });
 
 
 
