@@ -65,11 +65,11 @@ body{
     font-size: 3em;
     margin: 0;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .character-header{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .character-header img{
@@ -83,12 +83,26 @@ body{
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 250px;
+    margin-top: 20px;
 }
 
 .controls{
     display:flex;
     align-items: center;
     gap: 30px;
+}
+
+.char-frame{
+    width: 280px;
+    height: 280px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.char-frame img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .avatar-name{
@@ -109,7 +123,6 @@ body{
 .start-button{
     display: flex;
     justify-content: center;
-    margin-top: 60px;
 }
 
 .arrow-player1, .arrow-player2{
