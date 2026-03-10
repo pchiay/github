@@ -148,26 +148,69 @@ body{
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
-    width: 100%;
-    margin-top: 20px;
+    width: 90%;
+    margin-top: -70px;
 }
 
 .game-brand{
-    margin-bottom: 10px;
-}
-
-.game-brand p{
-    font-size: 3em;
-    font-family: "Mochiy Pop One", sans-serif;
-}
-
-.game-brand h1{
-    font-size: 4em;
-    font-family: "McLaren", sans-serif;
-    font-weight: lighter;
+    margin-top: 20px;
 }
 
 .names{
     font-size:2em;
     text-align: center;
+}
+
+.p1-pts{
+    transform: translateX(-472px) translateY(20px);
+    font-size: 1.5em;
+    border-color: black;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.p2-pts{
+    transform: translateX(300px) translateY(-75px);
+    font-size: 1.5em;
+    border-color: black;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.roll-button, .pass-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pass{
+    padding: 18px 30px;
+    font-size: 28px;
+    background-color: #E89C55;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    width: 150px;
+}
+
+.game-controls{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    transform: translateY(-20px)
+}
+
+.roll{
+    padding: 18px 30px;
+    font-size: 28px;
+    background-color: #F6E780;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    width: 150px;
 }
