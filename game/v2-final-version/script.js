@@ -204,9 +204,13 @@
 
     function checkWinner(){
         if(gameData.score[gameData.index] >= gameData.gameEnd){
-            dices.innerHTML = `<h2>${gameData.players[gameData.index]} wins! </h2>`;
-            rollButton.disabled = true;
-            passButton.disabled = true;
+            dices.innerHTML = `<h2>${gameData.players[gameData.index]} wins! </h2>
+            <button class="play-again">Play Again</button>`;
+            rollButton.style.display = "none";
+            passButton.style.display = "none";
+
+            const playAgainBtn = document.querySelector(".play-again");
+            playAgainBtn.addEventListener("click", resetGame);
 
             return true;
         }
@@ -217,5 +221,24 @@
     //     switchPlayer();
     //     setUpTurn();
     // });
+
+    function resetGame(){
+
+        gameData.score = [0,0];
+
+        gameData.roll1 = 0;
+        gameData.roll2 = 0;
+        gameData.rollSum = 0;
+
+        rollButton.style.display = "block";
+        passButton.style.display = "block";
+
+        rollButton.disabled = false;
+        passButton.disabled = false;
+
+        updateScore();
+
+        showLoadingPage();  
+    }
 
 })();

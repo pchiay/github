@@ -254,3 +254,13 @@ body{
     font-size: 1.5em;
     font-weight: lighter;
 } 
+
+.play-again{
+    margin-top:20px;
+    padding:18px 30px;
+    font-size:26px;
+    background-color:#9C66D2;
+    border:none;
+    border-radius:6px;
+    font-family:'Poppins', sans-serif;
+}
