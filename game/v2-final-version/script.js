@@ -37,6 +37,14 @@
     characterSelect.classList.add("hidden");
     gameScreen.classList.add("hidden");
 
+    const rollSound = new Audio("audio/roll.mp3");
+    const passSound = new Audio("audio/skip.mp3");
+    const startSound = new Audio("audio/play.mp3");
+    const snakeEyeSound = new Audio("audio/zero.mp3");
+    const rollOneSound = new Audio("audio/oneroll.mp3");
+    const winnerSound = new Audio("audio/winner.mp3");
+    const clickSound = new Audio("audio/clicky.mp3");
+
     function showLoadingPage(){
         loadingPage.classList.remove("hidden");
         characterSelect.classList.add("hidden");
@@ -56,6 +64,8 @@
     }
 
     playButton.addEventListener("click", function(){
+        clickSound.currentTime = 0;
+        clickSound.play();
         showCharacterSelect();
     });
 
@@ -130,6 +140,10 @@
 
 
     startButton.addEventListener("click", function(){
+
+        startSound.currentTime = 0;
+        startSound.play();
+
         p1Char.src = player1img[player1Idx];
         p2Char.src = player2img[player2Idx];
 
@@ -143,11 +157,12 @@
         if(gameData.score[0] >= gameData.gameEnd || gameData.score[1] >= gameData.gameEnd){
             return;
         }
-        
+
         dices.innerHTML = `<p>${gameData.players[gameData.index]}'s turn</p>`;
     }
 
     function throwDice(){
+
         gameData.roll1 = Math.floor(Math.random()*6)+1;
         gameData.roll2 = Math.floor(Math.random()*6)+1;
 
@@ -160,6 +175,9 @@
         </div>`;
 
         if(gameData.roll1 === 1 && gameData.roll2 === 1){
+
+            snakeEyeSound.currentTime = 0;
+            snakeEyeSound.play();
 
             dices.innerHTML += `<p class="dice-msg"> Oh no! Snake Eyes! Back to 0...</p>`
             gameData.score[gameData.index] = 0;
@@ -176,6 +194,9 @@
 
         else if(gameData.roll1 === 1 || gameData.roll2 ===1){
 
+            rollOneSound.currentTime = 0;
+            rollOneSound.play();
+
             dices.innerHTML += `<p class="dice-msg">You rolled a 1! Switching turns...</p>`
 
             switchPlayer();
@@ -186,6 +207,9 @@
             gameData.score[gameData.index] += gameData.rollSum;
             updateScore();
 
+            rollSound.currentTime = 0;
+            rollSound.play();
+
             if(checkWinner()){
                 return;
             }
@@ -193,6 +217,9 @@
     }
 
     function passTurn(){
+        passSound.currentTime = 0;
+        passSound.play();
+
         switchPlayer();
         setUpTurn();
     }
@@ -208,8 +235,13 @@
 
     function checkWinner(){
         if(gameData.score[gameData.index] >= gameData.gameEnd){
+
+            winnerSound.currentTime = 0;
+            winnerSound.play();
+
             dices.innerHTML = `<h2>${gameData.players[gameData.index]} wins! </h2>
             <button class="play-again">Play Again</button>`;
+
             rollButton.style.display = "none";
             passButton.style.display = "none";
 
@@ -228,6 +260,9 @@
 
     function resetGame(){
 
+        winnerSound.pause();
+        winnerSound.currentTime = 0;
+
         gameData.score = [0,0];
 
         gameData.roll1 = 0;
@@ -241,6 +276,9 @@
         passButton.disabled = false;
 
         updateScore();
+
+        clickSound.currentTime = 0;
+        clickSound.play();
 
         showLoadingPage();  
     }
