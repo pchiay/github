@@ -275,3 +275,25 @@ footer p, a{
     color: rgba(255, 255, 255, 0.553);
     text-decoration: none;
 }
+
+.border-img1{
+    max-height: 320px;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+.border-img2{
+    max-height: 320px;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.char-frame{
+    max-height: 300px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
