@@ -55,7 +55,7 @@ body{
 .rules {
     font-size: 14px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .play-btn {
@@ -162,7 +162,7 @@ body{
 }
 
 .p1-pts{
-    transform: translateX(-472px) translateY(20px);
+    transform: translateX(-465px) translateY(-7px);
     font-size: 1.5em;
     border-color: black;
     padding: 20px;
@@ -171,7 +171,7 @@ body{
 }
 
 .p2-pts{
-    transform: translateX(300px) translateY(-75px);
+    transform: translateX(300px) translateY(-100px);
     font-size: 1.5em;
     border-color: black;
     padding: 20px;
@@ -201,7 +201,7 @@ body{
     display: flex;
     flex-direction: row;
     gap: 40px;
-    transform: translateY(-20px)
+    transform: translateY(-50px)
 }
 
 .roll{
@@ -214,3 +214,43 @@ body{
     font-family: 'Poppins', sans-serif;
     width: 150px;
 }
+
+
+.dices img{
+    width: 117px;
+    height: 113px;
+    margin-top: 50px;
+}
+
+.dices p{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    font-family: "McLaren", sans-serif;
+}
+
+.dices h2{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    font-family: "McLaren", sans-serif;
+}
+
+.dices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 266px;
+    margin: 0 auto;
+}
+
+.dice-row{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.dices .dice-msg{
+    font-size: 1.5em;
+    font-weight: lighter;
+} 
