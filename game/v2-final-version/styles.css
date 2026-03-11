@@ -270,7 +270,8 @@ footer{
     margin-top: -50px;
 }
 
-footer p{
+footer p, a{
     text-align: center;
     color: rgba(255, 255, 255, 0.553);
+    text-decoration: none;
 }
