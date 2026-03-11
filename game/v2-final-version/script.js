@@ -114,7 +114,6 @@
         changeP1Pic();
     });
 
-    // player 2 arrows
     player2Left.addEventListener("click", function () {
         player2Idx--;
 
@@ -169,7 +168,6 @@
         gameData.rollSum = gameData.roll1 + gameData.roll2;
 
         dices.innerHTML = 
-        // `<p>${gameData.players[gameData.index]}'s turn</p>
         `<div class="dice-row">
         <img src="images/${gameData.dice[gameData.roll1-1]}" alt="die1"> <img src="images/${gameData.dice[gameData.roll2-1]}" alt="die2">
         </div>`;
@@ -240,7 +238,7 @@
             winnerSound.play();
 
             dices.innerHTML = `<h2>${gameData.players[gameData.index]} wins! </h2>
-            <button class="play-again">Play Again</button>`;
+            <button class="play-again">play again!</button>`;
 
             rollButton.style.display = "none";
             passButton.style.display = "none";
@@ -252,11 +250,6 @@
         }
         return false;
     }
-
-    // passButton.addEventListener("click", function(){
-    //     switchPlayer();
-    //     setUpTurn();
-    // });
 
     function resetGame(){
 
