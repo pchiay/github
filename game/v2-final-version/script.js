@@ -151,23 +151,23 @@
 
         dices.innerHTML = 
         // `<p>${gameData.players[gameData.index]}'s turn</p>
-        `<div class="dice=row">
+        `<div class="dice-row">
         <img src="images/${gameData.dice[gameData.roll1-1]}" alt="die1"> <img src="images/${gameData.dice[gameData.roll2-1]}" alt="die2">
         </div>`;
 
         if(gameData.roll1 === 1 && gameData.roll2 === 1){
 
-            dices.innerHTML += `<p class="dice-msg"> Oh no! Snake Eyes! Back to 0...`
+            dices.innerHTML += `<p class="dice-msg"> Oh no! Snake Eyes! Back to 0...</p>`
             gameData.score[gameData.index] = 0;
             
             updateScore();
             switchPlayer();
-            setTimeout(setUpTurn, 1200);
+            setTimeout(setUpTurn, 1800);
         }
 
         else if(gameData.roll1 === 1 || gameData.roll2 ===1){
 
-            dices.innerHTML += `<p class="dice-msg">You rolled a 1! Switching turns...`
+            dices.innerHTML += `<p class="dice-msg">You rolled a 1! Switching turns...</p>`
 
             switchPlayer();
             setTimeout(setUpTurn, 1200);
@@ -176,11 +176,19 @@
         else{
             gameData.score[gameData.index] += gameData.rollSum;
             updateScore();
-            checkWinner();
+
+            if(checkWinner()){
+                return;
+            }
         }
     }
 
     function passTurn(){
+
+        if(checkWinner()){
+            return;
+        }
+
         switchPlayer();
         setUpTurn();
     }
@@ -199,7 +207,10 @@
             dices.innerHTML = `<h2>${gameData.players[gameData.index]} wins! </h2>`;
             rollButton.disabled = true;
             passButton.disabled = true;
+
+            return true;
         }
+        return false;
     }
 
     // passButton.addEventListener("click", function(){
