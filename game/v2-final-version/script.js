@@ -140,6 +140,10 @@
     });
 
     function setUpTurn() {
+        if(gameData.score[0] >= gameData.gameEnd || gameData.score[1] >= gameData.gameEnd){
+            return;
+        }
+        
         dices.innerHTML = `<p>${gameData.players[gameData.index]}'s turn</p>`;
     }
 
@@ -161,6 +165,11 @@
             gameData.score[gameData.index] = 0;
             
             updateScore();
+
+            if(checkWinner()){
+                return;
+            }
+
             switchPlayer();
             setTimeout(setUpTurn, 1800);
         }
@@ -184,11 +193,6 @@
     }
 
     function passTurn(){
-
-        if(checkWinner()){
-            return;
-        }
-
         switchPlayer();
         setUpTurn();
     }
