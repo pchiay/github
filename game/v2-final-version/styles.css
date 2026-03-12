@@ -1,8 +1,6 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #A0CDF0;
-    /* background-image: url(images/rainbowcompress.png);
-    background-size: cover; */
 }
 
 .loading-screen.hidden, .select-character.hidden, .game-screen.hidden{
