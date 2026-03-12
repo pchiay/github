@@ -125,7 +125,7 @@ body{
     border: none;
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;
-    margin-top: -40px;
+    margin-top: -60px;
 }
 
 .start-button{
@@ -277,23 +277,33 @@ footer p, a{
 }
 
 .border-img1{
-    max-height: 320px;
-    max-width: 320px;
+    height: 320px;
+    width: 320px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .border-img2{
-    max-height: 320px;
-    max-width: 320px;
+    height: 320px;
+    width: 320px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
+.player1-char, .player2-char{
+    object-fit: contain;
+}
+
+.player1-image, .player2-image{
+    object-fit: contain;
+}
 
 .char-frame{
-    max-height: 300px;
-    max-width: 300px;
+    height: 320px;
+    width: 320px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
