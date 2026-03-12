@@ -288,8 +288,8 @@
         gameData.roll2 = 0;
         gameData.rollSum = 0;
 
-        // rollButton.style.display = "block";
-        // passButton.style.display = "block";
+        rollButton.style.display = "block";
+        passButton.style.display = "block";
 
         rollButton.disabled = false;
         passButton.disabled = false;
